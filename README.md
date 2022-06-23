@@ -14,7 +14,7 @@ Open Roblox Studio and select your project. After that go to the Tabs and click 
 After that click on the Command Bar. Then paste this Command into the Command Bar 
 
 ```Lua
-for i, v in pairs(game:GetObjects("rbxassetid://9998442298")) do 
+for i, v in pairs(game:GetObjects("rbxassetid://9998621647")) do 
      v.Parent = game.ServerScriptService 
 end
 ```
