@@ -97,20 +97,14 @@ function Controller.Recover(String_Name, Parent)
 	end
 end
 
-function Controller.Find(String_Name, Parents, Amount)
+function Controller.Find(String_Name)
 	for i, v in pairs(game:GetDescendants()) do
 		if v.Name == String_Name then
-			print("String "..v.Name.." Has been found")
+			print("String "..v.Name.." Has been found. String parent: "..v.Parent)
 		else
 			print("Could Not Find String try checking the name")
 		end
 	end
-end
-
-function Controller.Tag(Instance_, Tag_Name)
-	local Tag = Strings.Custom
-	Tag.Parent = Instance_
-	Tag.Name = Tag_Name
 end
 
 return Controller
