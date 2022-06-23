@@ -14,16 +14,28 @@ Open Roblox Studio and select your project. After that go to the Tabs and click 
 After that click on the Command Bar. Then paste this Command into the Command Bar 
 
 ```Lua
-for i, v in pairs(game:GetObjects("rbxassetid://9998621647")) do 
+for i, v in pairs(game:GetObjects("rbxassetid://9998442298")) do 
      v.Parent = game.ServerScriptService 
 end
 ```
 Then open the workspace and you're done with the Installation!
 
-## Basic Usage
+## Usage
 Now insert a Script into ServerScriptService then paste this line of code into the Script  
 ```local Stringbyte = require(game:GetService("ServerScriptService").Stringbyte.MainModule)```
 To create a String type this code in:  
 ```Stringbyte.Register("StringValue", "StringName", Parent, "Value")```
 
-Now run if you run the code and open that Parent you will see your String with that Value
+Now run if you run the code and open that Parent you will see your String with that Value. Now
+if you want to Delete that String how do you do it? well use this Command: ```Stringbyte.Destroy("StringName")```
+
+Now the String is deleted. if you Change your mind and want the String back then use this Command:
+```Stringbyte.Recover("StringName", Parent)```
+
+If you lose the String then use this Command: ```Stringbyte.Recover("StringName", Parent)```
+
+
+
+## Contributers
+
+- [@Ryanbyte](https://www.github.com/Ryanbyte)
