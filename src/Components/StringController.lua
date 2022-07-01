@@ -6,7 +6,7 @@ local Maid_ = Maid.new()
 local Table = {}
 
 function Controller.Register(String_Type, Name, Parent, String_Value)
-	if String_Type == "StringValue" then
+	if String_Type == "String" then
 		local String = Strings.StringValue
 		String.Parent = Parent
 		String.Name = Name
@@ -16,7 +16,7 @@ function Controller.Register(String_Type, Name, Parent, String_Value)
 		String.Value = String_Value
 	end
 	
-	if String_Type == "BoolValue" then
+	if String_Type == "Bool" then
 		local String = Strings.BoolValue
 		String.Parent = Parent
 		String.Name = Name
@@ -40,7 +40,7 @@ function Controller.Register(String_Type, Name, Parent, String_Value)
 		end
 	end
 	
-	if String_Type == "NumberValue" then
+	if String_Type == "Number" then
 		local String = Strings.NumberValue
 		String.Parent = Parent
 		String.Name = Name
@@ -50,7 +50,7 @@ function Controller.Register(String_Type, Name, Parent, String_Value)
 		String.Value = String_Value
 	end
 	
-	if String_Type == "IntValue" then
+	if String_Type == "Int" then
 		local String = Strings.IntValue
 		String.Parent = Parent
 		String.Name = Name
@@ -103,6 +103,16 @@ function Controller.Find(String_Name)
 			print("String "..v.Name.." Has been found. String parent: "..v.Parent)
 		else
 			print("Could Not Find String try checking the name")
+		end
+	end
+end
+
+function Controller.Edit(String, Name, Parent, Value)
+	for i, v in pairs(game:GetDescendants()) do
+		if v.Name == String then
+			v.Name = Name
+			v.Parent = Parent
+			v.Value = Value
 		end
 	end
 end
