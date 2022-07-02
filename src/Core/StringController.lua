@@ -1,5 +1,4 @@
 local Controller = {} 
-local Packages = script.Parent.Parent.Packages
 
 local Strings = require(script.Parent.Parent.Components.StringTable)
 local Table = {}
