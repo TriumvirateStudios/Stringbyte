@@ -4,7 +4,7 @@ local Strings = require(script.Parent.Parent.Components.StringTable)
 local Table = {}
 
 function Controller.Register(String_Type, Name, Parent, String_Value)
-	if String_Type == "StringValue" then
+	if String_Type == "String" then
 		local String = Strings.StringValue
 		String.Parent = Parent
 		String.Name = Name
