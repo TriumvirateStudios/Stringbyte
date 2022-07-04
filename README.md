@@ -20,7 +20,7 @@ First of all, we need to insert a script to `ServerScriptService` and then requi
 the Module can start
 
 ```lua
-local Stringbyte = require(game:GetService("ServerScriptService").Stringbyte)
+local Stringbyte = require(game:GetService("ServerScriptService").App.Stringbyte)
 --This requires the module get takes all of it's functions
 ```
 
