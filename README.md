@@ -5,8 +5,8 @@
 Stringbyte is a Module for Roblox which simplifies creating strings and managing tags
 
 ## Installation
-First of all, select the Latest [``Stringbyte``](https://www.roblox.com/library/9998442298) version. After you click on that, download the
-[``Stringbyte.rbxm``](https://github.com/TriumvirateStudios/Stringbyte/releases/download/Stable/Stringbyte.rbxm). Once it's done drag and drop the file to Roblox Studio
+First of all, select the Latest [``Stringbyte``](https://github.com/TriumvirateStudios/Stringbyte/releases/tag/Rework) version. After you click on that, download the
+[``Stringbyte.rbxm``](hhttps://github.com/TriumvirateStudios/Stringbyte/releases/download/Rework/Stringbyte.rbxm). Once it's done drag and drop the file to Roblox Studio
 
 ### Another method
 
